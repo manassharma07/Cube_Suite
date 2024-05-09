@@ -15,7 +15,7 @@ menu_items={
 st.sidebar.write('# About')
 st.sidebar.write(' Made By [Manas Sharma](https://manas.bragitoff.com)')
 st.sidebar.write('### *Powered by*')
-st.sidebar.write('* [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz/tree/master) for manipulating an processing cube files')
+st.sidebar.write('* [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz/tree/master) for manipulating and processing cube files')
 st.sidebar.write('* [Py3Dmol](https://3dmol.csb.pitt.edu/) for Cube File Visualizations')
 st.sidebar.write('* [Streamlit](https://streamlit.io/) for making of the Web App')
 # st.sidebar.write('* [PyMatgen](https://pymatgen.org/) for Periodic Structure Representations')
