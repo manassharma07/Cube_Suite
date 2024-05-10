@@ -4,3 +4,4 @@ py3Dmol
 ipython
 git+https://github.com/funkymunkycool/Cube-Toolz.git
 pandas
+plotly
