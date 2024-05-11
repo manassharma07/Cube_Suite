@@ -11,7 +11,7 @@ With Cube Suite, you can:
 🔺 Translate cube files
 ∫ Integrate cube files
 
-The app is powered by the amazing [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz) Python library under the hood, which does all the heavy lifting computations. The cube files are then visualized using the awesome [py3dmol](https://py3dmol.org)! 🤩
+The app is powered by the amazing [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz) Python library under the hood, which does all the heavy lifting computations. The cube files can also be visualized using the awesome [py3dmol](https://py3dmol.org)! 🤩
 
 ## Web App
 
@@ -21,8 +21,8 @@ You can access the Cube Suite web app at [https://cubesuite.streamlit.app/](http
 
 - **Add, Subtract, or Multiply Cube Files**: Perform arithmetic operations on cube files.
 - **Raise Cube File to a Power**: Raise the values in a cube file to a specified power.
-- **Translate Cube File**: Translate a cube file along the x, y, or z-axis.
-- **Calculate Planar Average**: Calculate the planar averaged density or integrated density from a cube file.
+- **Translate Cube File**: Translate a cube file along the given vector.
+- **Calculate Planar Average**: Calculate the planar averaged density from a cube file.
 - **Integrate Cube File**: Integrate the values in a cube file.
 - **Visualize Cube Files**: Visualize cube files using py3dmol, a powerful 3D molecular viewer.
 
