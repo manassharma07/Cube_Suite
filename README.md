@@ -32,7 +32,7 @@ Contributions to Cube Suite are welcome! If you find any issues or have suggesti
 
 ## About the Developer
 
-Cube Suite was created by [Your Name], a computational chemist with a passion for developing tools and methods to streamline computational chemistry workflows. You can find out more about the developer at [Your Website or LinkedIn Profile].
+Cube Suite was created by [Manas Sharma](https://manas.bragitoff.com), a computational material scientist with a passion for developing tools and methods to streamline computational chemistry workflows. You can find out more about the developer at [https://manas.bragitoff.com](https://manas.bragitoff.com).
 
 ## Acknowledgments
 
