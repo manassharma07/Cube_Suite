@@ -21,7 +21,7 @@ st.sidebar.write('* [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz/tr
 st.sidebar.write('* [Py3Dmol](https://3dmol.csb.pitt.edu/) for Cube File Visualizations')
 st.sidebar.write('* [Streamlit](https://streamlit.io/) for making of the Web App')
 st.sidebar.write('### *Source Code*')
-st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/CubeSuite)')
+st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/Cube_Suite)')
 
 def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
     spin = st.checkbox('Spin', value=False, key='key' + 'viz1.html')

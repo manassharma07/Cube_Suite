@@ -26,7 +26,7 @@ st.sidebar.write('* [Streamlit](https://streamlit.io/) for making of the Web App
 # st.sidebar.write('* [PubChempy](https://pypi.org/project/PubChemPy/1.0/) for Accessing the PubChem Database')
 # st.sidebar.write('* [ASE](https://wiki.fysik.dtu.dk/ase/) for File Format Conversions')
 st.sidebar.write('### *Source Code*')
-st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/CubeSuite)')
+st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/Cube_Suite)')
 
 def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
    
