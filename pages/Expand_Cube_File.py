@@ -63,6 +63,16 @@ def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
     HtmlFile.close()
 
 
+# New feature since streamlit v1.33.0
+@st.experimental_fragment
+def show_download_button(expanded_file_content):
+    st.download_button(
+        label="Download expanded CUBE file",
+        data=expanded_file_content,
+        file_name=f"expand_{nx}x{ny}x{nz}.cube",
+        mime="chemical/x-cube",
+    )
+
 
 # Main app
 # st.header('Cube Suite')
@@ -99,9 +109,4 @@ if uploaded_file is not None:
             with open(expanded_file_path, 'r') as f:
                 expanded_file_content = f.read()
 
-            st.download_button(
-                label="Download expanded CUBE file",
-                data=expanded_file_content,
-                file_name=f"expand_{nx}x{ny}x{nz}.cube",
-                mime="chemical/x-cube",
-            )
+            show_download_button(expanded_file_content)

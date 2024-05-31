@@ -63,6 +63,16 @@ def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
     HtmlFile.close()
 
 
+# New feature since streamlit v1.33.0
+@st.experimental_fragment
+def show_download_button(subtracted_file_content):
+    st.download_button(
+        label="Download subtracted CUBE file",
+        data=subtracted_file_content,
+        file_name="diff.cube",
+        mime="chemical/x-cube",
+    )
+
 
 # Main app
 # st.header('Cube Suite')
@@ -95,14 +105,9 @@ if uploaded_file1 is not None and uploaded_file2 is not None:
         if result.stderr:
             st.write("Error:", result.stderr)
         else:
-            summed_file_path = "diff.cube"
-            with open(summed_file_path, 'r') as f:
-                summed_file_content = f.read()
+            subtracted_file_path = "diff.cube"
+            with open(subtracted_file_path, 'r') as f:
+                subtracted_file_content = f.read()
 
-            st.download_button(
-                label="Download subtracted CUBE file",
-                data=summed_file_content,
-                file_name="diff.cube",
-                mime="chemical/x-cube",
-            )
+            show_download_button(subtracted_file_content)
 
