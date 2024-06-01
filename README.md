@@ -30,6 +30,9 @@ You can access the Cube Suite web app at [https://cubesuite.streamlit.app/](http
 
 Contributions to Cube Suite are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
 
+## Contributors
+The app was originally created by me (https://github.com/manassharma07/) but now also contains contributions from https://github.com/Lexachoc.
+
 ## About the Developer
 
 Cube Suite was created by [Manas Sharma](https://manas.bragitoff.com), a computational material scientist with a passion for developing tools and methods to streamline computational chemistry workflows. You can find out more about the developer at [https://manas.bragitoff.com](https://manas.bragitoff.com).

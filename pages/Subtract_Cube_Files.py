@@ -17,7 +17,7 @@ menu_items={
 
 # Sidebar stuff
 st.sidebar.write('# About')
-st.sidebar.write(' Made By [Manas Sharma](https://manas.bragitoff.com)')
+st.sidebar.write('Originally Made By [Manas Sharma](https://manas.bragitoff.com)')
 st.sidebar.write('### *Powered by*')
 st.sidebar.write('* [Cube Toolz](https://github.com/funkymunkycool/Cube-Toolz/tree/master) for manipulating and processing cube files')
 st.sidebar.write('* [Py3Dmol](https://3dmol.csb.pitt.edu/) for Cube File Visualizations')
@@ -25,6 +25,8 @@ st.sidebar.write('* [Streamlit](https://streamlit.io/) for making of the Web App
 # st.sidebar.write('* [PyMatgen](https://pymatgen.org/) for Periodic Structure Representations')
 # st.sidebar.write('* [PubChempy](https://pypi.org/project/PubChemPy/1.0/) for Accessing the PubChem Database')
 # st.sidebar.write('* [ASE](https://wiki.fysik.dtu.dk/ase/) for File Format Conversions')
+st.sidebar.write('### *Contributors*')
+st.sidebar.write('[Ya-Fan Chen ](https://github.com/Lexachoc)')
 st.sidebar.write('### *Source Code*')
 st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/Cube_Suite)')
 
