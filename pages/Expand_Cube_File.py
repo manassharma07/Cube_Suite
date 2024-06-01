@@ -26,7 +26,7 @@ st.sidebar.write('* [Streamlit](https://streamlit.io/) for making of the Web App
 # st.sidebar.write('* [PubChempy](https://pypi.org/project/PubChemPy/1.0/) for Accessing the PubChem Database')
 # st.sidebar.write('* [ASE](https://wiki.fysik.dtu.dk/ase/) for File Format Conversions')
 st.sidebar.write('### *Source Code*')
-st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/CubeSuite)')
+st.sidebar.write('[GitHub Repository](https://github.com/manassharma07/Cube_Suite)')
 
 def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
    
@@ -62,6 +62,16 @@ def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
     components.html(source_code, height=300, width=500)
     HtmlFile.close()
 
+
+# New feature since streamlit v1.33.0
+@st.experimental_fragment
+def show_download_button(expanded_file_content):
+    st.download_button(
+        label="Download expanded CUBE file",
+        data=expanded_file_content,
+        file_name=f"expand_{nx}x{ny}x{nz}.cube",
+        mime="chemical/x-cube",
+    )
 
 
 # Main app
@@ -99,9 +109,4 @@ if uploaded_file is not None:
             with open(expanded_file_path, 'r') as f:
                 expanded_file_content = f.read()
 
-            st.download_button(
-                label="Download expanded CUBE file",
-                data=expanded_file_content,
-                file_name=f"expand_{nx}x{ny}x{nz}.cube",
-                mime="chemical/x-cube",
-            )
+            show_download_button(expanded_file_content)
