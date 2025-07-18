@@ -66,7 +66,7 @@ def display_cube_file(file_content_text, viz1_html_name, isovalue, opacity):
 
 
 # New feature since streamlit v1.33.0
-@st.experimental_fragment
+@st.fragment
 def show_download_button(expanded_file_content):
     st.download_button(
         label="Download expanded CUBE file",
